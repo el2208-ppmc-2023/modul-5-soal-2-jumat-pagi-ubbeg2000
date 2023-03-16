@@ -9,20 +9,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int pemenang(int n, int m){
-    //Implementasi Fungsi
+int pemenang(int n, int k){
+    if(n==2){
+        return (k%2+1);
+    }
+    else{
+        return("%d\n",((pemenang(n-1,k)+k)%n));
+    }
 }
 
 int main()
 {
     // Declare Variables
-    int n, m;
+    int n, k;
     printf("Masukkan Jumlah Kursi : ");
-
+    scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
-    
+    scanf("%d", &k);
 
     // Print Pemenang
-    printf("Pemenang Adalah Kursi Nomor %d");
+    printf("Pemenang Adalah Kursi Nomor %d", pemenang(n,k));
     return 0;
 }
