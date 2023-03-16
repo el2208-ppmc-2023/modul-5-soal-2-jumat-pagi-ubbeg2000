@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "7\r\n4",
+      "output": "Pemenang Adalah Kursi Nomor 2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "10\r\n3",
+      "output": "Pemenang Adalah Kursi Nomor 4",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "100\r\n3",
+      "output": "Pemenang Adalah Kursi Nomor 99",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "10\r\n5",
+      "output": "Pemenang Adalah Kursi Nomor 3",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "40\r\n8",
+      "output": "Pemenang Adalah Kursi Nomor 21",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "",
+      "run": "./main",
+      "input": "36\r\n7",
+      "output": "Pemenang Adalah Kursi Nomor 23",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "",
+      "run": "./main",
+      "input": "39\r\n3",
+      "output": "Pemenang Adalah Kursi Nomor 28",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "",
+      "run": "./main",
+      "input": "48\r\n12",
+      "output": "Pemenang Adalah Kursi Nomor 36",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "",
+      "run": "./main",
+      "input": "62\r\n15",
+      "output": "Pemenang Adalah Kursi Nomor 34",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./main",
+      "input": "95\r\n14",
+      "output": "Pemenang Adalah Kursi Nomor 1",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
