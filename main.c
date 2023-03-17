@@ -12,12 +12,7 @@
 
 void pemenang(int n, int k, int *p, int p_len, int index){
     if(n == 1) {
-        for (int i = 0; i < p_len; i++) {
-            if (p[i] == 0) {
-                printf("Pemenang Adalah Kursi Nomor %d", i + 1);
-                return;
-            }
-        }
+        printf("Pemenang Adalah Kursi Nomor %d", index + 1);
     }
     else {
         p[((index+k) % n)] = 1;
