@@ -11,7 +11,7 @@
 #include <string.h>
 
 void pemenang(int n, int k, int *p, int p_len, int index){
-    if(cnt == 1) {
+    if(n == 1) {
         for (int i = 0; i < p_len; i++) {
             if (p[i] == 0) {
                 printf("Pemenang Adalah Kursi Nomor %d", i + 1);
@@ -28,7 +28,7 @@ void pemenang(int n, int k, int *p, int p_len, int index){
 int main()
 {
     // Declare Variables
-    int n, k, *people, index;
+    int n, k, *p, p_len, index;
     printf("Masukkan Jumlah Kursi : ");
     scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
@@ -36,8 +36,8 @@ int main()
     people = (int*)calloc(n, sizeof(int));
 
     // Print Pemenang
-    cnt = n;
+    p_len = n;
     index = 0;
-    pemenang(n,k - 1,people, n,index);
+    pemenang(n,k-1,people,p_len,index);
     return 0;
 }
