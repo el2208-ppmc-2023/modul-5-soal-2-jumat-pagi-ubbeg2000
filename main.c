@@ -16,6 +16,7 @@ void pemenang(int n, int k, int *p, int p_len, int index){
             if (p[i] == 0) {
                 printf("Pemenang Adalah Kursi Nomor %d", i + 1);
             }
+        }
     }
     else {
         index = ((index+k) % n);
@@ -33,7 +34,7 @@ int main()
     scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
     scanf("%d", &k);
-    people = (int*)calloc(n, sizeof(int));
+    p = (int*)calloc(n, sizeof(int));
 
     // Print Pemenang
     p_len = n;
