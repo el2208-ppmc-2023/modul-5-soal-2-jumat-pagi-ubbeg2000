@@ -39,6 +39,6 @@ int main()
     // Print Pemenang
     p_len = n;
     index = 0;
-    pemenang(n,k-1,people,p_len,index);
+    pemenang(n,k-1,p,p_len,index);
     return 0;
 }
