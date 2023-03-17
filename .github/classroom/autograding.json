@@ -55,7 +55,7 @@
       "setup": "",
       "run": "./main",
       "input": "36\r\n7",
-      "output": "Pemenang Adalah Kursi Nomor 23",
+      "output": "Pemenang Adalah Kursi Nomor 33",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -65,7 +65,7 @@
       "setup": "",
       "run": "./main",
       "input": "39\r\n3",
-      "output": "Pemenang Adalah Kursi Nomor 28",
+      "output": "Pemenang Adalah Kursi Nomor 25",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -75,7 +75,7 @@
       "setup": "",
       "run": "./main",
       "input": "48\r\n12",
-      "output": "Pemenang Adalah Kursi Nomor 36",
+      "output": "Pemenang Adalah Kursi Nomor 22",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -85,7 +85,7 @@
       "setup": "",
       "run": "./main",
       "input": "62\r\n15",
-      "output": "Pemenang Adalah Kursi Nomor 34",
+      "output": "Pemenang Adalah Kursi Nomor 33",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -95,7 +95,7 @@
       "setup": "",
       "run": "./main",
       "input": "95\r\n14",
-      "output": "Pemenang Adalah Kursi Nomor 1",
+      "output": "Pemenang Adalah Kursi Nomor 22",
       "comparison": "included",
       "timeout": 1,
       "points": 10
