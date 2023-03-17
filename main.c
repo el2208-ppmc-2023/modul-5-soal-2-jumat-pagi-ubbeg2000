@@ -8,31 +8,36 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-void pemenang(int n, int k, int cnt, int index){
+void pemenang(int n, int k, int *p, int p_len, int index){
     if(cnt == 1) {
-        printf("Pemenang Adalah Kursi Nomor %d", index + 1);
+        for (int i = 0; i < p_len; i++) {
+            if (p[i] == 0) {
+                printf("Pemenang Adalah Kursi Nomor %d", i + 1);
+            }
     }
     else {
         index = ((index+k) % n);
-        cnt -= 1;
         n -= 1;
-        pemenang(n , k, cnt, index);
+        p[index] = 1;
+        pemenang(n, k, p, p_len, index);
     }
 }
 
 int main()
 {
     // Declare Variables
-    int n, k, cnt, index;
+    int n, k, *people, index;
     printf("Masukkan Jumlah Kursi : ");
     scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
     scanf("%d", &k);
+    people = (int*)calloc(n, sizeof(int));
 
     // Print Pemenang
     cnt = n;
     index = 0;
-    pemenang(n,k - 1,cnt,index);
+    pemenang(n,k - 1,people, n,index);
     return 0;
 }
