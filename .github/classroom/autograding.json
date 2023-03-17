@@ -25,7 +25,7 @@
       "setup": "",
       "run": "./main",
       "input": "100\r\n3",
-      "output": "Pemenang Adalah Kursi Nomor 99",
+      "output": "Pemenang Adalah Kursi Nomor 91",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -45,7 +45,7 @@
       "setup": "",
       "run": "./main",
       "input": "40\r\n8",
-      "output": "Pemenang Adalah Kursi Nomor 21",
+      "output": "Pemenang Adalah Kursi Nomor 6",
       "comparison": "included",
       "timeout": 1,
       "points": 10
