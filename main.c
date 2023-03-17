@@ -9,25 +9,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int pemenang(int n, int k){
-    if(n==2){
-        return (k%2+1);
+int pemenang(int n, int k, int cnt, int index){
+    if(cnt == 1) {
+        printf("Pemenang Adalah Kursi Nomor %d", index + 1);
     }
-    else{
-        return("%d\n",((pemenang(n-1,k)+k)%n));
+    else {
+        index = ((index+k) % n);
+        cnt -= 1;
+        pemenang(n , k, cnt, index);
     }
 }
 
 int main()
 {
     // Declare Variables
-    int n, k;
+    int n, k, cnt, index;
     printf("Masukkan Jumlah Kursi : ");
     scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
     scanf("%d", &k);
 
     // Print Pemenang
-    printf("Pemenang Adalah Kursi Nomor %d", pemenang(n,k));
+    cnt = n;
+    index = 0;
+    pemenang(n,k,cnt,index);
     return 0;
 }
