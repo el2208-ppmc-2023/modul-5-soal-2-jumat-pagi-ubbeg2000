@@ -32,6 +32,6 @@ int main()
     // Print Pemenang
     cnt = n;
     index = 0;
-    pemenang(n,k,cnt,index);
+    pemenang(n,k - 1,cnt,index);
     return 0;
 }
