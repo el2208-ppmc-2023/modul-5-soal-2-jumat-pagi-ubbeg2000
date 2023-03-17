@@ -9,13 +9,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int pemenang(int n, int k, int cnt, int index){
+void pemenang(int n, int k, int cnt, int index){
     if(cnt == 1) {
         printf("Pemenang Adalah Kursi Nomor %d", index + 1);
     }
     else {
         index = ((index+k) % n);
         cnt -= 1;
+        n -= 1;
         pemenang(n , k, cnt, index);
     }
 }
