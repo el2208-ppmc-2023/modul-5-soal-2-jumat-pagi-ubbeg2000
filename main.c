@@ -7,32 +7,23 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-void pemenang(int n, int k, int *p, int p_len, int index){
-    if(n == 1) {
-        printf("Pemenang Adalah Kursi Nomor %d", index + 1);
-    }
-    else {
-        p[((index+k) % n)] = 1;
-        pemenang(n - 1, k, p, p_len, ((index+k) % n));
+int solve(int n, int k) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return (solve(n - 1, k) + k - 1) % n + 1;
     }
 }
 
-int main()
-{
-    // Declare Variables
-    int n, k, *p, p_len, index;
+int main() {
+    int n, k, result;
     printf("Masukkan Jumlah Kursi : ");
     scanf("%d", &n);
     printf("Masukkan Nomor Ketidakberuntungan : ");
     scanf("%d", &k);
-    p = (int*)calloc(n, sizeof(int));
-
-    // Print Pemenang
-    p_len = n;
-    index = 0;
-    pemenang(n,k-1,p,p_len,index);
+    result = solve(n, k);
+    printf("Pemenang Adalah Kursi Nomor %d", result);
     return 0;
 }
+
