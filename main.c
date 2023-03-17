@@ -20,7 +20,7 @@ void pemenang(int n, int k, int *p, int p_len, int index){
         }
     }
     else {
-        p[index] = 1;
+        p[((index+k) % n)] = 1;
         pemenang(n - 1, k, p, p_len, ((index+k) % n));
     }
 }
